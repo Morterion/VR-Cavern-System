@@ -10,18 +10,26 @@ public class PickUpScript : MonoBehaviour {
     private Valve.VR.EVRButtonId triggerbtn = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
     private SteamVR_TrackedObject tObj;
     private FixedJoint joint;
+
     [SerializeField]
     private GameObject target;
 
 	void Start () {
+        Debug.Log("Pickupscript start");
         tObj = GetComponent<SteamVR_TrackedObject>();
         joint = GetComponent<FixedJoint>();
 	}
 	
 	void FixedUpdate() {
         SteamVR_Controller.Device device = SteamVR_Controller.Input((int)tObj.index);
+
+        //Debug.Log("Fixed update, Controller is: " + device);
+        //Debug.Log(device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger));
         if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger)) {
-            if(tObj != null) { joint.connectedBody = tObj.GetComponent<Rigidbody>();  }
+            if(tObj != null) {
+                joint.connectedBody = tObj.GetComponent<Rigidbody>();
+                
+            }
         }else{
             if(joint.connectedBody != null) {
                 target.GetComponent<Rigidbody>().velocity = device.velocity;
@@ -33,6 +41,7 @@ public class PickUpScript : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other){
+        Debug.Log("COLLISION: " + other.gameObject.name + "with tag: " + other.tag);
         if (other.CompareTag(targetTag)){
             target = other.gameObject;
         }
@@ -40,6 +49,7 @@ public class PickUpScript : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("Collision exit");
         target = null;
     }
 }
