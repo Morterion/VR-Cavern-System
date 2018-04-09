@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 136876373406772102}
   - component: {fileID: 199970797876149548}
   - component: {fileID: 198835109663907042}
+  - component: {fileID: 114341915523633352}
   m_Layer: 0
   m_Name: CapBellShaped_StalkBolbous_LOD0_Type01
   m_TagString: Untagged
@@ -151,6 +152,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
+--- !u!114 &114341915523633352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619684056533380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b29f45991dd1af46b9143695ef02c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 15a100c23d33d714691613f55fcd2c56, type: 3}
 --- !u!114 &114470426761101544
 MonoBehaviour:
   m_ObjectHideFlags: 1

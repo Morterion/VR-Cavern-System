@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 136506934928473908}
   - component: {fileID: 199918605130470166}
   - component: {fileID: 198705561738040186}
+  - component: {fileID: 114753127225845822}
   m_Layer: 0
   m_Name: CapConvex_StalkBolbous_LOD0_Type04
   m_TagString: Untagged
@@ -162,6 +163,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114753127225845822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241189954476908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b29f45991dd1af46b9143695ef02c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 15a100c23d33d714691613f55fcd2c56, type: 3}
 --- !u!114 &114929989452186052
 MonoBehaviour:
   m_ObjectHideFlags: 1
