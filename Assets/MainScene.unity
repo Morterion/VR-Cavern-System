@@ -17781,7 +17781,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.2929282, g: 0.7429617, b: 0.9264706, a: 1}
   m_Intensity: 2.5
-  m_Range: 3
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -26254,7 +26254,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8a12bdc873880cb44a513fb54415bebd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.49
+  m_Volume: 0.104
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -26726,7 +26726,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.2929282, g: 0.7429617, b: 0.9264706, a: 1}
   m_Intensity: 2.5
-  m_Range: 3
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -35607,6 +35607,26 @@ Prefab:
     - target: {fileID: 4242823322256466, guid: 1d6511c616d183644a7c3cff7be3ff98, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 80.005005
+      objectReference: {fileID: 0}
+    - target: {fileID: 198974965299721686, guid: 1d6511c616d183644a7c3cff7be3ff98,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198974965299721686, guid: 1d6511c616d183644a7c3cff7be3ff98,
+        type: 2}
+      propertyPath: randomSeed
+      value: 531370828
+      objectReference: {fileID: 0}
+    - target: {fileID: 198960267146742180, guid: 1d6511c616d183644a7c3cff7be3ff98,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 198960267146742180, guid: 1d6511c616d183644a7c3cff7be3ff98,
+        type: 2}
+      propertyPath: randomSeed
+      value: 1781417005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1d6511c616d183644a7c3cff7be3ff98, type: 2}
@@ -67645,7 +67665,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.2929282, g: 0.7429617, b: 0.9264706, a: 1}
   m_Intensity: 2.5
-  m_Range: 3
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
